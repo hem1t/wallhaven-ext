@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "WallhavenX",
+  "version": "0.1",
+
+  "description": "Extends feature on wallhaven.cc",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.wallhaven.cc/*"],
+      "js": ["initial.js"]
+    }
+  ],
+  "permissions": [],
+  "omnibox": {
+    "keyword": "whx"
+  }
+}
